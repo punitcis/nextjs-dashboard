@@ -27,6 +27,7 @@ export async function fetchRevenue() {
 
     return data.rows;
   } catch (error) {
+    console.log(error);
     console.error('Database Error:', error);
     throw new Error('Failed to fetch revenue data.');
   }
